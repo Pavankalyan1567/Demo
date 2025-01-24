@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/16ab887008.js" crossorigin="anonymous"></script>
+    <title>Journey towards destination</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #main{
+            width: 100%;
+            height: 840px;
+            display: flex;
+            /* background-color:darkslategrey; */
+            position: relative;
+            background-image: url(../Asset/images/background.jpg);
+            background-size: 100%;
+        }
+        #sub{
+            list-style: none;
+            position: absolute;
+            left: 50px;
+            font-size: 35px;
+            display: flex;
+            color:black;
+            font-weight:bold;
+            transition: 2s;
+        }
+        .list{
+            padding-left: 90px;
+            padding-top: 5px;
+        }
+        #logout{
+            position: absolute;
+            left:1160px;
+            transition:transform 0.4s;
+        }
+        #logout:hover{
+            transform: scale(1.2);
+            color:red;
+        }
+        #home{
+            padding-left: 8px;
+            transition:transform 0.8s;
+            color:brown;
+        }
+        #home:hover{
+            transform: scale(1.2);
+            color:red;
+        }
+        #info{
+            transition:transform 0.8s;
+            color: blue;
+        }
+        #info:hover{
+            transform: scale(1.2);
+            color:red;
+        }
+        #box{
+            width: 50%;
+            height: 600px;
+            top: 170px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: bold;
+        }
+        .subox{
+            width: 250px;
+            height: 230px;
+            /* background-color: aqua; */
+            border: 2px solid black;
+            box-shadow: 2px 2px 7px black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 17px;
+            transition: 0.8s;
+            font-size: 29px;
+            font-weight: bold;
+            color:transparent ;
+        }
+        #a{
+            background-image: url(../Asset/images/india.jpg);
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+            
+        }
+        #b{
+            background-image: url(../Asset/images/Russia.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 250px;
+        }
+        #c{
+            background-image: url(../Asset/images/Japan.jpg);
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+            color: aliceblue;
+        }
+        #d{
+            background-image: url(../Asset/images/Australia.jpg);
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+        }
+        .subox:hover{
+            transform: scale(1.2);
+            color: aliceblue;
+        }
+        #jor{
+            font-size: 80px;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 200px;
+            right: 50px;
+            text-align: center;
+            font-family: 'Amatic SC';
+            text-shadow: 5px 5px 15px black;
+            
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #bodypage{
+            width: 100%;
+            height: 900px;
+            background-color:black;
+            position: relative;
+        }
+        #p{
+            width: 80%;
+            height: 400px;
+            float: left;
+            background-color: darkolivegreen;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            overflow: hidden;
+        }
+        #k{
+            width: 70%;
+            height: 400px;
+            float: left;
+            background-color: darkolivegreen;
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+            position: absolute;
+            left: 420px;
+             top: 410px; 
+        }
+        #m{
+            width: 33%;
+            height: 450px;
+            float: left;
+            clip-path:polygon(0 0, 61% 0, 83% 53%, 100% 100%, 0 100%, 0% 50%);
+            position: absolute;
+            left: 40px;
+            top: 420px;
+            color: darksalmon;
+        } 
+        #font{
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            left:90px;
+            color: darkgoldenrod;
+        }
+        #para{
+            text-align: justify;
+            position: absolute;
+            top: 60px;
+            text-indent: 20px;
+            color: darkgoldenrod;
+            letter-spacing: 3px;
+        }
+       #footer{
+        width: 100%;
+        height: 80px;
+        background-color: gray;
+        position: relative;
+       }
+       #copy{
+        font-size: 60px;
+       }
+       #own{
+        font-size: 16px;
+        position: absolute;
+        left: 65px;
+        top: 30px;
+        letter-spacing: 5px;
+       }
+       #fb{
+        font-size: 50px;
+        position: absolute;
+        right: 250px;
+        color: aliceblue;
+        top: 12px;
+       }
+       #twt{
+        font-size: 50px;
+        position: absolute;
+        right: 170px;
+        color: aliceblue;
+        top: 12px;
+       }
+       #ins{
+        font-size: 50px;
+        position: absolute;
+        right: 89px;
+        color: aliceblue;
+        top: 12px;
+       }
+       #snp{
+        font-size: 50px;
+        position: absolute;
+        right: 10px;
+        color: aliceblue;
+        top: 12px;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <ul id="sub">
+           <a href="#"><li class="list" id="home">Home</li></a>
+            <a href="../Html/info.html"><li class="list" id="info">Info</li></a>
+            <li class="list" id="logout"><a href="../Html/login.html"><a href="../Html/login.html">Logout</a></li>
+        </ul>
+        <div id="box">
+            <div class="subox" id="a"><a href="../Html/gallery.html" style="text-decoration: none;">India</a></div>
+            <div class="subox" id="b"><a href="../Html/gallery.html" style="text-decoration: none;">Russia</a></div>
+            <div class="subox" id="c"><a href="../Html/gallery.html" style="text-decoration: none;">Japan</a></div>
+            <div class="subox" id="d"><a href="../Html/gallery.html" style="text-decoration: none;">Australia</a></div>
+        </div>
+        <h1 id="jor">Journey<br><br>towards<br><br>destination</h1>
+    </div>
+    <div id="bodypage">
+        <div id="p">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.88005892897!2d78.26795942751984!3d17.412627415525517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1676910806855!5m2!1sen!2sin" width="1170" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="k">
+            <video src="../Asset/videos/istockphoto-1253696615-640_adpp_is.mp4" autoplay muted loop style="width:100%;"></video>
+        </div>
+        <div id="m">
+           <center> <h1 id="font"> Biryani </h1><P id="para">Pilaf or pulao, as it is known in the Indian subcontinent, is another mixed rice dish popular in the cuisines of the Indian subcontinent, Central Asia, and Middle Eastern cuisine. Opinions differ on the differences between pulao and biryani, and whether actually there is a difference between the two.[19]
+
+            According to Delhi-based historian Sohail Hashmi, pulao tends to be plainer than biryani, and consists of meat or vegetables cooked with rice with the bottom layered with potatoes or onions. Biryani contains more gravy (or yakhni), and is often cooked longer, leaving the meat (and vegetables, if present) more tender, and the rice more flavoured. Biryani is also cooked with additional dressings and often would have a light layer of socarrat at the bottom.[20]</P></center>
+        </div>
+    </div>
+    <div id="footer"><i class="fa-sharp fa-solid fa-copyright" id="copy">
+        <h1 id="own">Copyrights belongs to PKM</h1></i>
+        <a href="https:://www.fa-twitter.com"><i class="fa-brands fa-twitter" id="twt"></i></a>
+        <a href="https:://www.fa-facebook.com"><i class="fa-brands fa-facebook" id="fb"></i></a>
+        <a href="https:://www.fa-instagram.com"><i class="fa-brands fa-instagram" id="ins"></i></a>
+        <a href="https:://www.fa-snapchat.com"><i class="fa-brands fa-snapchat" id="snp"></i></a>
+    </div>
+</body>
+</html>

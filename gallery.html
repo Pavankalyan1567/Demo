@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/16ab887008.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+   <link rel="stylesheet" href="../Css/gallery.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+   <script src="../JavaScript/gallery.js" defer></script>
+</head>
+<body onload="header()">
+
+    <div id="header">
+        <h1 id="gallery">Gallery</h1>
+<button id="left" onclick="left()"> < </button>
+<button id="right" onclick="right()"> > </button>
+<div>
+    <ul>
+<a href="../Html/p2.html"><li class="list" id="home">Home</li></a>
+<a href="../Html/info.html"><li class="list" id="info">Info</li></a>
+<li class="list" id="logout"><a href="../Html/login.html">Logout</a></li>
+</ul>
+</div>
+
+    </div>
+    <div id="bodyofgallery">
+        <div id="gallery2">
+    <img class="images" onclick="openTheImage(0)">
+    <img class="images" onclick="openTheImage(1)">
+    <img class="images" onclick="openTheImage(2)">
+    <img class="images" onclick="openTheImage(3)">
+    <img class="images" onclick="openTheImage(4)">
+    <img class="images" onclick="openTheImage(5)">
+    <img class="images" onclick="openTheImage(6)">
+    <img class="images" onclick="openTheImage(7)">
+    <img class="images" onclick="openTheImage(8)">
+    <img class="images" onclick="openTheImage(9)">
+    <img class="images" onclick="openTheImage(10)">
+    <img class="images" onclick="openTheImage(11)">
+    <img class="images" onclick="openTheImage(12)">
+    <img class="images" onclick="openTheImage(13)">
+        </div>
+    </div>
+    <div id="bigimage" style="display: none;">
+        <h1 id="close" onclick="closeTheImage()">x</h1>
+        <img id="bigimg">
+    </div>
+    <div id="footer"><i class="fa-sharp fa-solid fa-copyright" id="copy">
+        <h1 id="own">Copyrights belongs to PKM</h1></i>
+        <a href="https:://www.fa-twitter.com"><i class="fa-brands fa-twitter" id="twt"></i></a>
+        <a href="https:://www.fa-facebook.com"><i class="fa-brands fa-facebook" id="fb"></i></a>
+        <a href="https:://www.fa-instagram.com"><i class="fa-brands fa-instagram" id="ins"></i></a>
+        <a href="https:://www.fa-snapchat.com"><i class="fa-brands fa-snapchat" id="snp"></i></a>
+    </div>
+</body>
+</html>

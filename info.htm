@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/16ab887008.js" crossorigin="anonymous"></script>
+    <title>Journey towards destination</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #main{
+            width: 100%;
+            height: 850px;
+            display: flex;
+            /* background-color:darkslategrey; */
+            position: relative;
+            background-image: url(../Asset/images/pexels-hamid-tajik-5851337.jpg);
+            background-size: 100%;
+        }
+        #sub{
+            list-style: none;
+            position: absolute;
+            left: 50px;
+            font-size: 35px;
+            display: flex;
+            color:black;
+            font-weight:bold;
+            transition: 2s;
+        }
+        .list{
+            padding-left: 90px;
+            padding-top: 5px;
+        }
+        #logout{
+            position: absolute;
+            left:1160px;
+            transition:transform 0.4s;
+        }
+        #logout:hover{
+            transform: scale(1.2);
+            color:red;
+        }
+        #home{
+            padding-left: 8px;
+            transition:transform 0.8s;
+        }
+        #home:hover{
+            transform: scale(1.2);
+            color:red;
+        }
+        #info{
+            transition:transform 0.4s;
+        }
+        #info:hover{
+            transform: scale(1.2);
+            color:red;
+        }
+        #box{
+            width: 50%;
+            height: 600px;
+            top: 170px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .subox{
+            width: 250px;
+            height: 230px;
+            /* background-color: aqua; */
+            border: 2px solid black;
+            box-shadow: 2px 2px 7px black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 17px;
+            transition: 0.8s;
+            font-size: 29px;
+            font-weight: bold;
+            color:transparent ;
+        }
+        #a{
+            background-image: url(../Asset/images/2631242.jpg);
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+            
+        }
+        #b{
+            background-image: url(../Asset/images/russia.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 250px;
+        }
+        #c{
+            background-image: url(../Asset/images/japan.jpg);
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+        }
+        #d{
+            background-image: url(../Asset/images/australia.jpg);
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+        }
+        .subox:hover{
+            transform: scale(1.2);
+            color: aliceblue;
+        }
+        #jor{
+            font-size: 80px;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 200px;
+            right: 50px;
+            text-align: center;
+            font-family: 'Amatic SC';
+            text-shadow: 5px 5px 15px black;
+            
+        }
+        #picinfo{
+            width: 100%;
+            height: 600px;
+            background-color:black;
+        }
+        #mini{
+            width: 70%;
+            height: 600px;
+            background-color: black;
+            position: absolute;
+            left: 200px;
+            /* background-image:url(../Asset/images/photographer-gfaf5fdcdd_1920.jpg); */
+            background-size: 100%;
+        }
+       #mum{
+            width: 50%;
+            height: 600px;
+            background-color: aliceblue;
+            background-image: url(../Asset/images/photographer-gfaf5fdcdd_1920.jpg);
+            background-size: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+       }
+       #chini{
+            width: 50%;
+            height: 600px;
+            background-color:black;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            right: 0px;
+            padding-left: 30px;
+       }
+       #text{
+        font-size: 22px;
+        text-align: justify;
+        text-indent: 30px;
+        position: absolute;
+        top: 65px;
+        font-style:italic;
+        color: aliceblue;
+       }
+       #divy{
+        color: aliceblue;
+        text-align: center;
+        padding-left: 60px;
+       }
+       #footer{
+        width: 100%;
+        height: 80px;
+        background-color: brown;
+        position: relative;
+       }
+       #copy{
+        font-size: 60px;
+       }
+       #pkm{
+        font-size: 16px;
+        position: absolute;
+        left: 65px;
+        top: 30px;
+        letter-spacing: 5px;
+       }
+       #fb{
+        font-size: 50px;
+        position: absolute;
+        right: 180px;
+       }
+       #twt{
+        font-size: 50px;
+        position: absolute;
+        right: 120px;
+       }
+       #ins{
+        font-size: 50px;
+        position: absolute;
+        right: 70px;
+       }
+       #snp{
+        font-size: 50px;
+        position: absolute;
+        right: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <ul id="sub">
+           <a href="../Html/p2.html"><li class="list" id="home">Home</li></a>
+            <a href="#"><li class="list" id="info">Info</li></a>
+            <li class="list" id="logout">Logout</li>
+        </ul>
+        <div id="box">
+            <div class="subox" id="a">India</div>
+            <div class="subox" id="b">Russia</div>
+            <div class="subox" id="c">Japan</div>
+            <div class="subox" id="d">Australia</div>
+        </div>
+        <h1 id="jor">Journey<br><br>towards<br><br>destination</h1>
+    </div>
+    <div id="picinfo">
+      <div id="mini">
+        <div id="mum"></div>
+        <div id="chini"><center><h1 id="divy">Divyam Ramji Mehrotra</h1></center><p id="text">Divyam Ramji Mehrotra, a full-time wedding photographer for the past 7 years, has covered 120+ weddings as the main photographer. 
+
+            When it comes to professional degrees, Divyam has completed a Diploma in Visual Effects. 
+            
+            He is the founder of Weddingrams, a full-time candid and destination wedding photography boutique, based in Gurugram, India. 
+            
+            He is the co-founder of Photopedia.
+            
+            A Fujifilm mentor, photography is everything for him. 
+            
+            His work has been featured in PopXO, Wedmegood, Hindustan Times, Brides Today, and many other places. 
+            
+            His services include pre/post wedding shoots, cinematographed wedding videos, and wedding day tales. 
+            
+            Divyam was awarded the ‘wedding photographer of the year 2018-2019’ by Sony Better photography awards, the ‘Best Photographer, India 2018’ by One Eyeland, and various category awards at Weddingsutra 2018. 
+            
+            Talking about Divyam’s style, it depicts real people, real moments in a creative way and not just by a template.</p></div>
+      </div>
+    </div>
+    <div id="footer"><i class="fa-sharp fa-solid fa-copyright" id="copy">
+        <h1 id="pkm">Copyrights belongs to PKM</h1></i>
+        <i class="fa-brands fa-twitter" id="twt"></i>
+        <i class="fa-brands fa-facebook" id="fb"></i>
+        <i class="fa-brands fa-instagram" id="ins"></i>
+        <i class="fa-brands fa-snapchat" id="snp"></i>
+    </div>
+</body>
+</html>
